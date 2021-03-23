@@ -1,0 +1,3 @@
+ab="strawberry"
+list2=[ord(x)for x in a]
+print("order is:",list2)
