@@ -1,0 +1,7 @@
+list1=[]
+num=int(input("how many num:"))
+for n in range(num):
+    numbers=int(input("enter the numbers"))
+    list1.append(numbers)
+list1=[x**2 for x in list1]
+print(list1)
