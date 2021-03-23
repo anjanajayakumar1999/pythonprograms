@@ -1,0 +1,4 @@
+a="strawberry"
+vow="aeiou"
+lis=[x for x in a if x in vow]
+print("vowels are:",lis)
