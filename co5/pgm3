@@ -1,0 +1,11 @@
+import csv
+with open("anjana.csv","w",newline='') as file:
+ write=csv.writer(file)
+ write.writerow(["sl no","name","mark"])
+ write.writerow(["1","anu","67"])
+ write.writerow(["2","neethu","90"])
+ write.writerow(["3", "raj", "86"])
+with open("anjana.csv") as csvfile:
+ data=csv.reader(csvfile)
+ for r in data:
+  print(r)
