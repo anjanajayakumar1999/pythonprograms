@@ -1,0 +1,15 @@
+import csv
+f=open("vegetable.csv","w")
+writer=csv.DictWriter(f,fieldnames=["vegetable","count"])
+writer.writeheader()
+writer.writerow({"vegetable":"tomato","count":"1"})
+writer.writerow({"vegetable":"onion","count":"2"})
+f.close()
+c=0
+f=open("vegetable.csv")
+reader=csv.DictReader(f)
+for row in reader:
+ if c==0:
+  print(f'{" ".join(row)}')
+  print(f'{row["vegetable"]},{row["count"]}')
+f.close()
