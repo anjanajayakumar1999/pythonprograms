@@ -1,0 +1,11 @@
+import csv
+with open("name.csv","w",newline='') as file:
+ write=csv.writer(file)
+ write.writerow(["Roll no","name","mark"])
+ write.writerow(["1","anu","67"])
+ write.writerow(["2","neethu","90"])
+ write.writerow(["3", "raj", "86"])
+with open("name.csv") as csvfile:
+ data=csv.DictReader(csvfile)
+ for r in data:
+ print(r['Sl No'],r['name'])
